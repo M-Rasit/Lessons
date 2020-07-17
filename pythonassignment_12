@@ -1,11 +1,10 @@
-
-## Is the gıven number prime or not?
-num = int(input("Please enter a positive integer number: "))
-correction = 0
-for i in range(1, num + 1):
-    if num % i == 0:
-        correction += 1
-if correction == 2:
-    print("{} is a prime number.".format(num))
-else :
-    print("{} is a not prime number.".format(num))
+number = int(input("Please enter a positive number: "))
+prime_numbers = []
+for i in range(1, number + 1):
+    count = 0
+    for j in range(1, i + 1):
+        if i % j == 0:
+            count += 1
+    if count == 2:
+        prime_numbers.append(i)
+print(prime_numbers)
