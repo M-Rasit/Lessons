@@ -1,1 +1,1 @@
-# I put my python assignments in this repository.
+# I put my assignments in this repository.
